@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Projeto Web</title>
+</head>
+<body>
+<h1>Grupo: <span th:text="${grupoDescricao}"></span></h1>
+<h1>Como Usar o Programa</h1>
+
+<h2>Página Principal</h2>
+<p>Esta é a página principal do projeto. Aqui você encontrará informações sobre o grupo e uma explicação sobre o projeto.</p>
+<p>Para acessar as rotas, clique nos links correspondentes abaixo:</p>
+<ul>
+  <li><a th:href="@{/rota_um/value1/value2}">Rota Um</a></li>
+  <li><a th:href="@{/rota_dois/value3/value4}">Rota Dois</a></li>
+  <li><a th:href="@{/rota_tres/value5/value6}">Rota Três</a></li>
+</ul>
+
+<h2>Rota Um</h2>
+<p>Na Rota Um, você pode fornecer duas variáveis na URL. Elas serão processadas e exibidas na página.</p>
+<p>Exemplo de URL: <code>/rota_um/123/abc</code></p>
+
+<h2>Rota Dois</h2>
+<p>Na Rota Dois, você pode fornecer mais duas variáveis na URL para processamento e exibição.</p>
+<p>Exemplo de URL: <code>/rota_dois/x/y</code></p>
+
+<h2>Rota Três</h2>
+<p>Na Rota Três, assim como nas outras rotas, você pode fornecer duas variáveis para processamento e exibição.</p>
+<p>Exemplo de URL: <code>/rota_tres/alpha/beta</code></p>
+</body>
+</html>
